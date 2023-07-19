@@ -18,12 +18,12 @@ lien profile github: https://github.com/ares1345
 print("""1- Convertisseur de temperatures       
 2- test                                   """)
 
-choix = input("Quel programmes choisissez-vous? ")
+choix = input("Quel programmes choisissez-vous? (Entrer le numéro du programme)")
 while choix != "-1":
     
     if choix == "1":
         
-        choix = input("Quel programmes choisissez-vous? ")
+        choix = input("Quel programmes choisissez-vous? (Si vous souhaitez quitter le programme, entrer -1)")
 
 if choix == "-1":
     quit()
