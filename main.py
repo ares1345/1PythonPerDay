@@ -8,4 +8,15 @@ sys.path.append('/home/joe/repos/1PythonPerDay/Programs')
 
 #-------------------------------------------------------------------------------------------------------------
 
+print("""1- Convertisseur de temperatures       
+2- test                                   """)
 
+choix = input("Quel programmes choisissez-vous? ")
+while choix != "-1":
+    
+    if choix == "1":
+        
+        choix = input("Quel programmes choisissez-vous? ")
+
+if choix == "-1":
+    quit()
