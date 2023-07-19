@@ -6,6 +6,8 @@ def convDeTemp():
     if typechoix == "C":
         temp = (temp * 9/5) + 32
         print(f"La température en Fahrenheit est de {temp}. ")
-    elif:
+    else:
         temp = (temp - 32) * 5/9
         print(f"La température en celsius est de {temp}. ")
+
+    return """Le p"""
