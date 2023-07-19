@@ -8,6 +8,13 @@ sys.path.append('/home/joe/repos/1PythonPerDay/Programs')
 
 #-------------------------------------------------------------------------------------------------------------
 
+print("""   
+Ceci est un programme écrit par moi afin de montrer mes capacités en développement dans mon CV et autre.
+lien profile github: https://github.com/ares1345
+-------------------------------------------------
+    
+    """)
+
 print("""1- Convertisseur de temperatures       
 2- test                                   """)
 
