@@ -1,4 +1,5 @@
 def convDeTemp():
+    print("")
     typechoix = input("Quelle type de température souhaitez vous convertir? (C pour celsius ou F pour fahrenheit) ")
     
     temp = float(input("Quel est la température? "))
@@ -8,7 +9,7 @@ def convDeTemp():
         temp = float(input("Erreur. Le résultat n'est pas un nombre, veuillez réessayez. "))
     
     
-    if typechoix == "C":
+    if typechoix.upper() == "C":
         temp = (temp * 9/5) + 32
         print(f"""La température en Fahrenheit est de {temp}.
         
@@ -17,7 +18,7 @@ def convDeTemp():
          """)
     
     
-    elif temp == "F":
+    if typechoix.upper() == "F":
         temp = (temp - 32) * 5/9
         print(f"""La température en celsius est de {temp}.
          

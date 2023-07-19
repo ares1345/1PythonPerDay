@@ -9,7 +9,7 @@ from convDeTemp import *
 #-------------------------------------------------------------------------------------------------------------
 
 print("""   
-Ceci est un programme écrit par moi afin de montrer mes capacités en développement dans mon CV et autre.
+Ceci est un programme écrit par moi (Rayan I.) afin de montrer mes capacités en développement dans mon CV et autre.
 lien profile github: https://github.com/ares1345
 -------------------------------------------------
     
