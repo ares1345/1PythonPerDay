@@ -4,7 +4,7 @@ sys.path.append('/home/joe/repos/1PythonPerDay/Programs')
 
 #-------------------------------------------------------------------------------------------------------------
 from convDeTemp import *
-
+from imc import *
 
 #-------------------------------------------------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ lien profile github: https://github.com/ares1345
     """)
 
 print("""1- Convertisseur de temperatures       
-2- test                                   
+2- Calculateur d'IMC                                   
 """)
 
 choix = input("Quel programmes choisissez-vous? (Entrer le numéro du programme) ")
