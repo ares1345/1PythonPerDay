@@ -26,5 +26,9 @@ while choix != "-1":
         convDeTemp()
         choix = input("Quel programmes choisissez-vous? (Si vous souhaitez quitter le programme, entrer -1) ")
 
+    if choix == "2":
+        imc()
+        choix = input("Quel programmes choisissez-vous? (Si vous souhaitez quitter le programme, entrer -1) ")
+
 if choix == "-1":
     quit()
