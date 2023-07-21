@@ -14,12 +14,14 @@ def ppc():
         if (choixUser.upper() == "PIERRE" and choixProg == 3) or (choixUser.upper() == "PAPIER" and choixProg == 1) or (choixUser.upper() == "CISEAU" and choixProg == 2):
             print()
             print(f"Vous avez gagné! ")
+            print(choixProg)
             print()
             scoreUser += 1
 
         if (choixUser.upper() == "PIERRE" and choixProg == 2) or (choixUser.upper() == "PAPIER" and choixProg == 3) or (choixUser.upper() == "CISEAU" and choixProg == 1):
             print()
             print(f"Vous avez perdu! ")
+            print(choixProg)
             print()
             scoreProg += 1
 
@@ -27,9 +29,28 @@ def ppc():
         print("""
         -----------------
         
-            Vous avez perdu! """)
+            Vous avez gagné! """)
     
     elif scoreUser < scoreProg:
+        print("""
+        -----------------
+        
+            Vous avez gagné! """)
+        
+    elif scoreUser == scoreProg:
+        print("""
+        -----------------
+        
+            Égalité! """)
 
+
+
+    print("""
+    
+    Le programme est terminé, Vous allez être redirigé vers le programme principal
+           -------------------------------------------------------------------------
+         """)
+
+ppc()
         
 
