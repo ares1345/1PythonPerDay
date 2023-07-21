@@ -10,7 +10,7 @@ def ppc():
     
     for i in range(nbPartie):
         choixUser = input("Que choisissez-vous, pierre, papier ou ciseau? ")
-        choixProg = range.randint(1, 3)
+        choixProg = random.randint(1, 3)
         if (choixUser.upper() == "PIERRE" and choixProg == 3) or (choixUser.upper() == "PAPIER" and choixProg == 1) or (choixUser.upper() == "CISEAU" and choixProg == 2):
             print()
             print(f"Vous avez gagné! ")
@@ -18,7 +18,7 @@ def ppc():
             print()
             scoreUser += 1
 
-        if (choixUser.upper() == "PIERRE" and choixProg == 2) or (choixUser.upper() == "PAPIER" and choixProg == 3) or (choixUser.upper() == "CISEAU" and choixProg == 1):
+        elif (choixUser.upper() == "PIERRE" and choixProg == 2) or (choixUser.upper() == "PAPIER" and choixProg == 3) or (choixUser.upper() == "CISEAU" and choixProg == 1):
             print()
             print(f"Vous avez perdu! ")
             print(choixProg)
@@ -26,20 +26,23 @@ def ppc():
             scoreProg += 1
 
     if scoreUser > scoreProg:
-        print("""
-        -----------------
+        print(f"""
+            -----------------
         
             Vous avez gagné! """)
     
     elif scoreUser < scoreProg:
-        print("""
-        -----------------
+        print(f"""
+            -----------------
         
-            Vous avez gagné! """)
+            Vous avez gagné!
+
+            Votre score: {scoreUser}
+            Score du programme """)
         
     elif scoreUser == scoreProg:
-        print("""
-        -----------------
+        print(f"""
+            -----------------
         
             Égalité! """)
 
