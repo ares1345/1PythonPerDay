@@ -9,7 +9,7 @@ def ppc():
         nbPartie = int(input("Erreur, le nombre de partie que vous avez entrés est égal à 0 ou est un nombre négatif, veuillez réessayez"))
     
     for i in range(nbPartie):
-        choixUser = input("Que choisissez-vous, pierre, papier ou ciseau?")
+        choixUser = input("Que choisissez-vous, pierre, papier ou ciseau? ")
         choixProg = range.randint(1, 3)
         if (choixUser.upper() == "PIERRE" and choixProg == 3) or (choixUser.upper() == "PAPIER" and choixProg == 1) or (choixUser.upper() == "CISEAU" and choixProg == 2):
             print()
@@ -23,4 +23,13 @@ def ppc():
             print()
             scoreProg += 1
 
-    if 
+    if scoreUser > scoreProg:
+        print("""
+        -----------------
+        
+            Vous avez perdu! """)
+    
+    elif scoreUser < scoreProg:
+
+        
+
