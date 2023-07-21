@@ -1,6 +1,5 @@
 import sys
-sys.path.append('/home/joe/repos/1PythonPerDay/Programs')
-#NOTE: Pour que le programme fonctionne, il faut changer ce PATH avec celui ou est installés le programme et surtout celui qui mène au dossier Programs
+sys.path.append('./Programs')
 
 #-------------------------------------------------------------------------------------------------------------
 from convDeTemp import *
@@ -31,4 +30,5 @@ while choix != "-1":
         choix = input("Quel programmes choisissez-vous? (Si vous souhaitez quitter le programme, entrer -1) ")
 
 if choix == "-1":
+    print()
     quit()
