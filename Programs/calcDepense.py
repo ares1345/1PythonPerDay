@@ -1,4 +1,4 @@
-def calcBudget():
+def calcDepense():
     print()
     depense = 0
     total = 0
