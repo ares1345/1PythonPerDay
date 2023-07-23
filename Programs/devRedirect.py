@@ -24,4 +24,16 @@ def devRedirect():
         
         """))
 
+        while choixLien != 1 and choixLien != 2 and choixLien != 3:
+            choixLien = int(input("Erreur. Veuillez entrer un choix valide. "))
+
+        if choixLien == 1:
+            webbrowser.open("https://freecodecamp.org")
+        elif choixLien == 2:
+            webbrowser.open("https://theodinproject.com")
+        elif choixLien == 3:
+            webbrowser.open("https://education.github.com")
+
+        
+
 devRedirect()
