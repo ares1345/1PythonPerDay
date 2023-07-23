@@ -34,6 +34,29 @@ def devRedirect():
         elif choixLien == 3:
             webbrowser.open("https://education.github.com")
 
+    if choix == 2:
+        choixLien = int(input("""Vous pouvez choisir le nombre associé au site pour être redirigé au site avec votre navigateur
         
+        sololearn.com (1):
+            Une ressource qui peut vous apprendre n'importe quel langage de programmation sur une application. À noter que certaines fonctionnalités sont dérrières un paywall.    
+        
+        100 days of python par Dr. Angela Yu (Udemy) [udemy.com/course/100-days-of-code/] (2):
+            Connu pour son bootcamp sur le développement web, Angela Yu a aussi un cours sur Python mais qui est instruit différament. Au lieu d'écouter des cours, vous codez chaque jour un projet différent et qui vous permet de vous instruire 
+            
+        education.github.com (3):
+            Pack d'offres partenaires de Github, il vous faut simplement prouver que vous êtes étudiants, peu importe votre niveau de scolarité. Je vous recommende si vous préferer les outils de Jetbrain ou souhaitez apprendre le développement web en général avec des sites plus établis (Frontend Masters, Educative...) et d'autres outils pour vous aidez au mieux.
+        
+        """))
+
+        while choixLien != 1 and choixLien != 2 and choixLien != 3:
+            choixLien = int(input("Erreur. Veuillez entrer un choix valide. "))
+
+        if choixLien == 1:
+            webbrowser.open("https://freecodecamp.org")
+        elif choixLien == 2:
+            webbrowser.open("https://theodinproject.com")
+        elif choixLien == 3:
+            webbrowser.open("https://education.github.com")
+    
 
 devRedirect()
