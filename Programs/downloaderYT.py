@@ -7,6 +7,8 @@ def downloaderYT():
     print()
     print()
     lien = input("Veuillez entrer le lien de la vidéo qui sera télécharger dans le dossier 'videos'. ")
-    
+    yt = YT(lien, on_progress_callback=on_progress)
+
+    videos= 
 
 downloaderYT()
