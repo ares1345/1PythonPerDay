@@ -3,7 +3,7 @@ from pytube.cli import on_progress #this module contains the built in progress b
 
 def downloaderYT():
     print()
-    print("Ce programme a juste une valeur illustrative pour montrer mes capacités en programmation. Je condamne avec la plus grande fermeté le téléchargement de vidéos sans passer par une manière approuvé par Youtube. ")
+    print("Ce programme a juste une valeur illustrative pour montrer mes capacités en programmation. ")
     print()
     print()
     lien = input("Veuillez entrer le lien de la vidéo qui sera télécharger dans le dossier 'videos'. ")
@@ -11,7 +11,7 @@ def downloaderYT():
 
 
     print()
-    choix = input("Souhaitez-vous seulement l'audio de la vidéo ou la vidéo entièrement? (veuillez entrer A pour audio et V pour video )")
+    choix = input("Souhaitez-vous seulement l'audio de la vidéo ou la vidéo entièrement? (veuillez entrer A pour audio et V pour video) ")
     while choix.upper() != "A" and choix.upper() != "V":
         choix = input("Erreur, veuillez entrer un choix valide. (A pour audio, V pour vidéo.) ")
 
@@ -20,7 +20,12 @@ def downloaderYT():
         audio = yt.streams.filter(only_audio=True)
         audio[0].download("./Programs/videos")
 
-    #videos = yt.streams.first()
-    #videos = yt.streams.get_highest_resolution
+    if choix == "V":
+        videos = yt.streams.first()
+        videos = yt.streams.get_highest_resolution()
+        videos.download("./Programs/videos")
+
+    print("Terminé! ")
+    
 
 downloaderYT()
