@@ -9,13 +9,18 @@ def downloaderYT():
     lien = input("Veuillez entrer le lien de la vidéo qui sera télécharger dans le dossier 'videos'. ")
     yt = YT(lien, on_progress_callback=on_progress)
 
+
     print()
     choix = input("Souhaitez-vous seulement l'audio de la vidéo ou la vidéo entièrement? (veuillez entrer A pour audio et V pour video )")
     while choix.upper() != "A" and choix.upper() != "V":
         choix = input("Erreur, veuillez entrer un choix valide. (A pour audio, V pour vidéo.) ")
-        
-    
-    videos = yt.streams.first()
-    videos = yt.streams.get_highest_resolution
+
+    if choix == "A":
+        audio = yt.streams.first()
+        audio = yt.streams.filter(only_audio=True)
+        audio[0].download("./Programs/videos")
+
+    #videos = yt.streams.first()
+    #videos = yt.streams.get_highest_resolution
 
 downloaderYT()
