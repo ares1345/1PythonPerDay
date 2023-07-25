@@ -9,7 +9,7 @@ from imc import *
 from ppc import *
 from calcDepense import *
 from devRedirect import *
-
+from pomodoroTimer import *
 
 #-------------------------------------------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ lien profile github: https://github.com/ares1345
     """)
 
 print("""1- Convertisseur de temperatures   6-Téléchargeur de vidéos Youtube      
-2- Calculateur d'IMC    
+2- Calculateur d'IMC                        7- Timer pomodoro
 3- Jeu Pierre Papier Ciseau
 4- Calculateur de dépense    
 5- Ensemble de lien lié à la programmation                          
@@ -48,6 +48,9 @@ while choix != "-1":
 
     elif choix == "6":
         print("Je suis désolé de vous dire ca mais le programme refuse de se lancer si il n'est pas lancé depuis son fichier.. Si vous voulez l'utilisez vous devez lancer downloaderYT.py vous-même. ")
+
+    elif choix == "7":
+        pomodoroTimer()
 
     
     choix = input("Quel programmes choisissez-vous? (Si vous souhaitez quitter le programme, entrer -1) ")
