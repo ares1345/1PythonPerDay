@@ -10,7 +10,7 @@ def pomodoroTimer():
             for j in range(1500, 0, -1):
                 secondes = j % 60
                 minutes = int(j/60) % 60
-                heures = int(x/3600)
+                heures = int(j/3600)
                 print(f"{heures:02}:{minutes:02}:{secondes:02}", end="\r")
                 time.sleep(1)
             
@@ -38,7 +38,22 @@ def pomodoroTimer():
         tempsTr *= 60
         tempsRep *= 60
         for i in range(nbRep):
-             
+            for j in range(tempsTr, 0, -1):
+                secondes = j % 60
+                minutes = int(j/60) % 60
+                heures = int(j/3600)
+                print(f"{heures:02}:{minutes:02}:{secondes:02}", end="\r")
+                time.sleep(1)
+            
+            print()
+            print("PÉRIODE DE TRAVAIL TERMINÉ, 5 MINUTES DE REPOS COMMENCE")
+            
+            for k in range(tempsRep, 0, -1):
+                    secondes = k % 60
+                    minutes = int(k/60) % 60
+                    heures = int(k/3600)
+                    print(f"{heures:02}:{minutes:02}:{secondes:02}", end="\r")
+                    time.sleep(1)
 
         
             
