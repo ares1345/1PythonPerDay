@@ -36,7 +36,7 @@ def imc():
 
     print("""
     
-    Le programme est terminé, Vous allez être redirigé vers le programme principal
+        Le programme est terminé, Vous allez être redirigé vers le programme principal
            -------------------------------------------------------------------------
          """)
 

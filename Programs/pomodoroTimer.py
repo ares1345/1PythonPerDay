@@ -62,6 +62,12 @@ def pomodoroTimer():
             
             print()
             print(f"PÉRIODE DE REPOS TERMINÉ, PÉRIODE DE {int(tempsTr/60)} MINUTES DE TRAVAIL COMMENCE ")
+
+    print("""
+    
+        Le programme est terminé, Vous allez être redirigé vers le programme principal
+           -------------------------------------------------------------------------
+         """)
         
-pomodoroTimer()
+
             
