@@ -16,7 +16,7 @@ from pomodoroTimer import *
 print("""   
 Ceci est le programme principal écrit par moi afin de montrer mes capacités en développement dans mon CV et autre.
 Vous pouvez accéder au autres programmes depuis ce menu.
-lien profile github: https://github.com/ares1345
+lien profile github: https://github.com/ray-FR
 -------------------------------------------------
     
     """)
